@@ -1,15 +1,15 @@
 # rest_api_iaInteractive
-IA – Examen Backend Python Developer
+## IA – Examen Backend Python Developer
 
-Caso Práctico: Sistema de registro y asignación de Grimorios para la academia de magia del Reino del Trébol.
+**Caso Práctico:** Sistema de registro y asignación de Grimorios para la academia de magia del Reino del Trébol.
 
 Este proyecto consiste en la construcción de un API Rest para la academia de magia del Reino del Trébol, que permita el registro de solicitudes de ingreso de estudiantes y la asignación aleatoria de Grimorios. Los Grimorios se clasifican según el tipo de trébol en la portada y su nivel de poder varía desde el trébol de una hoja hasta el trébol de cinco hojas.
 
-Herramientas utilizadas:
+**Herramientas utilizadas:**
 
 Este proyecto se ha construido utilizando Python y Flask como framework para el desarrollo del API Rest. Se ha utilizado también una base de datos alojada en Postgresql para almacenar la información de las solicitudes de ingreso y las asignaciones de Grimorios. Ademas de el uso de Visual Studio Code editor de codigo fuente y Postman como plataforma para la prueba de la API.
 
-Endpoints:
+**Endpoints:**
 
 A través de Postman se pueden acceder a los siguientes endpoints necesarios para soportar las operaciones requeridas:
 
@@ -25,7 +25,7 @@ A través de Postman se pueden acceder a los siguientes endpoints necesarios par
 
 -- DELETE /solicitudes/<id>: permite eliminar una solicitud de ingreso existente.
 
-Datos requeridos en una solicitud de ingreso:
+**Datos requeridos en una solicitud de ingreso:**
 
 Para poder registrar una solicitud de ingreso, se requiere que el aspirante proporcione los siguientes datos:
 
@@ -36,7 +36,7 @@ Para poder registrar una solicitud de ingreso, se requiere que el aspirante prop
 5. Afinidad Mágica (Ls tipos de magia se encuentran dentro del archivo Excel alojado en la carpeta "documentos").
 Cualquier solicitud que no cumpla con estos criterios será automáticamente rechazada y no se le asignará un Grimorio.
 
-Auto asignación de Grimorios y portadas:
+**Auto asignación de Grimorios y portadas:**
 
 Una vez que una solicitud de ingreso ha sido aprobada, se procederá a la asignación aleatoria de un Grimorio y su respectiva portada según el nivel de poder del Grimorio. Este proceso se realiza automáticamente y no requiere intervención manual.
 
@@ -44,7 +44,9 @@ Una vez que una solicitud de ingreso ha sido aprobada, se procederá a la asigna
 
 Instrucciones para ejecutar el proyecto:
 
+1. En Postgresql, crear una base de datos con el nombre: *"escuela_magica"* y dentro de ella crear una tabla con el query que se encuentra en el archivo **"Database.txt"**.
 
+2. 
 
-Autor:
+**Autor:**
 Este proyecto ha sido desarrollado por Uriel Cruz Rodríguez.
