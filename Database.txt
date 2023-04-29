@@ -1,0 +1,11 @@
+CREATE TABLE solicitudes (
+  id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  nombre VARCHAR(20) NOT NULL,
+  apellido VARCHAR(20) NOT NULL,
+  identificacion VARCHAR(10) NOT NULL UNIQUE,
+  edad INTEGER NOT NULL,
+  afinidad_magica VARCHAR(70) NOT NULL,
+  estatus VARCHAR(50) DEFAULT 'Pendiente',
+  grimorio VARCHAR(70),
+  portada VARCHAR(70)
+);
